@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Input Form</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-r from-pink-100 to-green-100">
+    <main>
+      <section>
+        <div class="max-w-[60rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 m-auto">
+          <div class="items-center gap-12">
+            <div class="relative">
+              <div
+                class="flex flex-col border-gray-200 rounded-xl p-4 sm:p-6 lg:p-10 bg-white"
+              >
+                <h2
+                  class="text-4xl font-bold text-purple-600 dark:text-neutral-200"
+                >
+                  <i class="fa-solid fa-graduation-cap text-gray-700"></i>
+                  Student List Management
+                </h2>
+                <form>
+                  <div class="mt-6 grid gap-4 lg:gap-6">
+                    <div class="grid grid-cols-3 gap-4 lg:gap-6">
+                      <div>
+                        <input
+                          type="text"
+                          placeholder="Student Name"
+                          name="no-suggest"
+                          class="py-2.5 sm:py-3 px-4 block w-full border-2 border-gray-200 rounded-lg sm:text-sm focus:outline-none focus:border-blue-400"
+                        />
+                      </div>
+                      <div>
+                        <input
+                          type="text"
+                          placeholder="Grade (A, B, C, ...)"
+                          name="no-suggest"
+                          class="py-2.5 sm:py-3 px-4 block w-full border-2 border-gray-200 rounded-lg sm:text-sm focus:outline-none focus:border-blue-400"
+                        />
+                      </div>
+                      <div>
+                        <button
+                          type="submit"
+                          class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                        >
+                          + Add Student
+                        </button>
+                      </div>
+                    </div>
+                    <div class="grid grid-cols-6 gap-4 lg:gap-6">
+                      <div class="col-span-4">
+                        <input
+                          placeholder="Filter By Grade"
+                          type="text"
+                          name="no-suggest"
+                          class="py-2.5 sm:py-3 px-4 block w-full border-2 border-gray-200 rounded-lg sm:text-sm focus:outline-none focus:border-purple-400"
+                        />
+                      </div>
+                      <div>
+                        <button
+                          type="submit"
+                          class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-purple-600 text-white hover:bg-purple-700 focus:outline-hidden focus:bg-purple-700 disabled:opacity-50 disabled:pointer-events-none"
+                        >
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                          Filter
+                        </button>
+                      </div>
+                      <div>
+                        <button
+                          type="submit"
+                          class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-gray-300 text-gray-700 hover:bg-gray-400 focus:outline-hidden focus:bg-gray-400 disabled:opacity-50 disabled:pointer-events-none"
+                        >
+                          Reset
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="mt-6">
+                  <h3 class="text-2xl font-semibold text-purple-600">
+                    <i class="fa-solid fa-clipboard-list text-gray-700"></i>Students
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./node_modules/"></script>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
