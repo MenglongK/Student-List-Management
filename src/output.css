@@ -354,9 +354,24 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
+<<<<<<< HEAD
   .text-\[24px\] {
     font-size: 24px;
   }
+=======
+  .text-\[2px\] {
+    font-size: 2px;
+  }
+  .text-\[24px\] {
+    font-size: 24px;
+  }
+  .text-\[26px\] {
+    font-size: 26px;
+  }
+  .text-\[28px\] {
+    font-size: 28px;
+  }
+>>>>>>> 8fa6a8989c0ce03572b2e3b0a40c29addac672ab
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -368,6 +383,9 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .text-\[28\] {
+    color: 28;
   }
   .text-blue-500 {
     color: var(--color-blue-500);
